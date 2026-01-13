@@ -1,5 +1,6 @@
 import SEO from "../common/seo/Seo";
 import dynamic from 'next/dynamic';
+import Head from 'next/head'
 
 const HeaderFour = dynamic(() => import("../common/header/HeaderFour"), { ssr: true });
 const HeroFour = dynamic(() => import("../components/hero/HeroFour"), { ssr: true });
@@ -15,6 +16,11 @@ const FooterFour = dynamic(() => import("../common/footer/FooterFour"), { ssr: t
 export default function Home() {
 	return (
 		<>
+		<Head>
+       
+        <meta name="google-site-verification" content="fUwzr-Z6ZrFn5AFYprv9N7iBBW8m4vKb4XHSSgioYMA" />
+        <title>Group Buy SEO Tools - Best Digital Marketing Tools</title>
+      </Head>
 			<SEO pageTitle={"Group Buy SEO Tools - Best Digital Marketing Tools"} />
 			<HeaderFour />
 			<HeroFour />

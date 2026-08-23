@@ -4,7 +4,19 @@ export default function Document() {
     return (
         <Html lang="en">
             <Head>
-        <meta name="google-site-verification" content="fUwzr-Z6ZrFn5AFYprv9N7iBBW8m4vKb4XHSSgioYMA" />
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QMNYLTS06"></script>
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-6QMNYLTS06');
+                        `,
+                    }}
+                />
+                <meta name="google-site-verification" content="fUwzr-Z6ZrFn5AFYprv9N7iBBW8m4vKb4XHSSgioYMA" />
                 {/* favicons Icons */}
                 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo/favicon.png" />
                 <link rel="manifest" href="/assets/images/favicons/site.webmanifest" />

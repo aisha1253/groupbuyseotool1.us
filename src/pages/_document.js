@@ -16,7 +16,7 @@ export default function Document() {
                         `,
                     }}
                 />
-                <meta name="google-site-verification" content="fUwzr-Z6ZrFn5AFYprv9N7iBBW8m4vKb4XHSSgioYMA" />
+                <meta name="google-site-verification" content="vVMo50rX8Acnln0wSH7fPbC7Cb31FzB7vKYRDCPbuG0" />
                 {/* favicons Icons */}
                 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo/favicon.png" />
                 <link rel="manifest" href="/assets/images/favicons/site.webmanifest" />

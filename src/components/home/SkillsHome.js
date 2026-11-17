@@ -8,7 +8,7 @@ const SkillsHome = () => {
                     <div className="gb-empower__visual">
                         <img
                             src="/assets/img/skill/skill-img-1.png"
-                            alt="SEO research tools for learning and practice"
+                            alt="Build practical SEO skills with research tools"
                             width={640}
                             height={480}
                             loading="lazy"

@@ -32,9 +32,12 @@ const HeaderFour = () => {
                                         </nav>
                                     </div>
                                     <div className="header__main-right">
-                                        <Link href="/#pricing" className="gb-btn gb-btn-primary gb-header-cta">
+                                        <a
+                                            href="/pricing"
+                                            className="gb-btn gb-btn-primary gb-header-cta"
+                                        >
                                             Explore Plans
-                                        </Link>
+                                        </a>
                                         <button
                                             onClick={() => setIsActive(true)}
                                             className="side-toggle"

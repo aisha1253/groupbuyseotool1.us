@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const ContactHome = () => {
     return (
-        <section id="contact" className="gb-section gb-contact-cta">
+        <section id="contact" className="gb-section gb-contact-cta gb-section--tint">
             <div className="container">
                 <div className="gb-contact-cta__box">
                     <h2>Find the Right SEO Tools for Your Next Project</h2>

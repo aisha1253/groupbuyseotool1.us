@@ -16,15 +16,12 @@ const FooterFour = ({ blurb = DEFAULT_BLURB }) => {
                                     <div className="footer-widget__column footer-widget__about">
                                         <div className="footer-widget__about-logo">
                                             <Link href="/">
-                                                <img
-                                                    src="/assets/img/logo/logo-white.png"
-                                                    alt="Group Buy SEO Tools"
-                                                    width={180}
-                                                    height={42}
-                                                />
+                                                <img src="/assets/img/logo/logo-white.png" alt="Group Buy SEO Tools" />
                                             </Link>
                                         </div>
-                                        <p className="footer-widget__about-text">{blurb}</p>
+                                        <p className="footer-widget__about-text">
+                                            {blurb}
+                                        </p>
                                         <div className="social-hvr">
                                             <a href="/" aria-label="Twitter"><i className="fa-brands fa-twitter"></i></a>
                                             <a href="/" aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>

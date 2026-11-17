@@ -43,7 +43,7 @@ const FaqHome = () => {
     };
 
     return (
-        <section id="faq" className="gb-section gb-section--tint">
+        <section id="faq" className="gb-section">
             <div className="container">
                 <div className="gb-section__head">
                     <h2>Frequently Asked Questions</h2>

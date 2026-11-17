@@ -23,13 +23,10 @@ const PAGE_TITLE = 'groupbuyseotool | Affordable SEO Tools and Shared Access';
 const PAGE_DESCRIPTION =
     'Explore groupbuyseotool for shared access to SEO tools, affordable monthly plans, keyword research, site audits, backlink analysis, and helpful support.';
 
-const HOME_FOOTER_BLURB =
-    'groupbuyseotool provides affordable shared access to SEO and digital marketing tools for freelancers, agencies, and website owners. Explore practical research and optimization tools through plans designed for different budgets and workflows. We operate independently and are not affiliated with Ahrefs, Semrush, Moz, or other third-party software providers.';
-
 const organizationJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Group Buy SEO Tools',
+    name: 'groupbuyseotool',
     url: SITE_URL,
     email: 'admin@groupbuyseotool.us',
     description: PAGE_DESCRIPTION,
@@ -108,7 +105,7 @@ export default function Home() {
                 <ContactHome />
                 <FaqHome />
             </main>
-            <FooterFour blurb={HOME_FOOTER_BLURB} />
+            <FooterFour />
         </>
     );
 }

@@ -652,6 +652,148 @@ a { transition: color .2s ease, background .2s ease, transform .2s ease, box-sha
 .gb-price__list li.more::before { color: var(--gb-orange); }
 .gb-price .gb-btn { width: 100%; }
 
+/* ---------- Single tools catalog (homepage) ---------- */
+.gb-single-tools {
+  background: var(--gb-white);
+}
+.gb-tools-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.gb-tools-search {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid var(--gb-line);
+  border-radius: 12px;
+  font-family: var(--gb-font);
+  font-size: 15px;
+  color: var(--gb-ink);
+  background: var(--gb-off);
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.gb-tools-search:focus {
+  border-color: var(--gb-blue-bright);
+  box-shadow: 0 0 0 3px rgba(58, 87, 252, 0.15);
+  background: #fff;
+}
+.gb-tools-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.gb-tools-cat {
+  padding: 8px 14px;
+  border: 1px solid var(--gb-line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--gb-ink-2);
+  font-family: var(--gb-font);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.gb-tools-cat:hover {
+  border-color: var(--gb-blue-bright);
+  color: var(--gb-blue);
+}
+.gb-tools-cat.is-active {
+  background: var(--gb-grad-blue-orange);
+  border-color: transparent;
+  color: #fff;
+}
+.gb-tools-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+@media (min-width: 576px) {
+  .gb-tools-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 992px) {
+  .gb-tools-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1200px) {
+  .gb-tools-grid { grid-template-columns: repeat(4, 1fr); }
+}
+.gb-tool-card {
+  background: var(--gb-off);
+  border: 1px solid var(--gb-line);
+  border-radius: 14px;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 100%;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.gb-tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--gb-shadow);
+  border-color: rgba(58, 87, 252, 0.25);
+  background: #fff;
+}
+.gb-tool-card__brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+}
+.gb-tool-card__logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid var(--gb-line);
+  padding: 4px;
+  flex-shrink: 0;
+}
+.gb-tool-card__top {
+  flex: 1;
+  min-width: 0;
+}
+.gb-tool-card__cat {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--gb-blue);
+  margin-bottom: 6px;
+}
+.gb-tool-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+  color: var(--gb-ink);
+}
+.gb-tool-card .gb-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+.gb-tools-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 8px;
+}
+.gb-tools-more .gb-btn {
+  min-width: 200px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ---------- Steps ---------- */
 .gb-steps {
   display: grid;
@@ -1109,22 +1251,35 @@ a { transition: color .2s ease, background .2s ease, transform .2s ease, box-sha
 /* ---------- Contact CTA ---------- */
 .gb-contact-cta__box {
   text-align: center;
-  max-width: 720px;
+  max-width: 920px;
   margin: 0 auto;
-  padding: 56px 28px;
+  padding: 96px 40px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 24px;
   background: var(--gb-grad-hero);
   color: #fff;
 }
 .gb-contact-cta__box h2 {
   color: #fff !important;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
+  font-size: clamp(28px, 3.5vw, 40px);
 }
 .gb-contact-cta__box p {
   color: rgba(255,255,255,.85);
-  margin: 0 0 28px;
-  font-size: 16px;
-  line-height: 1.6;
+  margin: 0 0 32px;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 680px;
+}
+@media (max-width: 767px) {
+  .gb-contact-cta__box {
+    padding: 72px 24px;
+    min-height: 280px;
+  }
 }
 
 /* Why us flat cards */

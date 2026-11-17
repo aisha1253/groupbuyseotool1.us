@@ -19,20 +19,10 @@ const HeroFour = () => {
                         Be found everywhere search happens. Access Ahrefs, Semrush, Moz and 50+ premium tools — at a fraction of the cost.
                     </p>
                     <div className="gb-hero__actions">
-                        <a
-                            href="https://members.seotoolsgroupbuy.us/signup"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="gb-btn gb-btn-primary"
-                        >
-                            Start for free
+                        <a href="/pricing" className="gb-btn gb-btn-primary">
+                            Explore Plans
                         </a>
-                        <a
-                            href="https://seotoolsgroupbuy.us/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="gb-btn gb-btn-secondary"
-                        >
+                        <a href="/tools" className="gb-btn gb-btn-secondary">
                             Explore tools
                         </a>
                     </div>

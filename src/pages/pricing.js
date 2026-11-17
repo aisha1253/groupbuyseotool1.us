@@ -2,11 +2,16 @@ import SEO from "../common/seo/Seo";
 import HeaderFour from "../common/header/HeaderFour";
 import FooterFour from "../common/footer/FooterFour";
 import HowToGetStarted from "../components/service/HowToGetStarted";
+import { getCartUrl, PlansData } from "../data/products";
+
+const featuredIds = new Set([207, 4, 97]);
+const otherPlans = PlansData.filter((p) => !featuredIds.has(p.productId));
 
 const plans = [
     {
         name: 'Lite Plan',
         price: '10',
+        productId: 207,
         desc: 'Essentials to start ranking and researching.',
         popular: false,
         tools: [
@@ -18,6 +23,7 @@ const plans = [
     {
         name: 'Small Plan',
         price: '15',
+        productId: 4,
         desc: 'Best value for freelancers and small teams.',
         popular: true,
         tools: [
@@ -36,6 +42,7 @@ const plans = [
     {
         name: 'Mega Plan',
         price: '50',
+        productId: 97,
         desc: 'Full stack access for agencies and power users.',
         popular: false,
         tools: [
@@ -99,14 +106,43 @@ const PricingPage = () => {
                                     ))}
                                 </ul>
                                 <a
-                                    href="https://members.seotoolsgroupbuy.us/signup"
+                                    href={getCartUrl(plan.productId)}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={`gb-btn ${plan.popular ? 'gb-btn-primary' : 'gb-btn-blue'}`}
                                 >
-                                    Buy now
+                                    Buy Now
                                 </a>
                             </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="gb-section gb-section--tint">
+                <div className="container">
+                    <div className="gb-section__head">
+                        <h2>More plans &amp; packs</h2>
+                        <p>
+                            Every plan below uses Buy Now — opens cart directly with that product (no tracking params).
+                        </p>
+                    </div>
+                    <div className="gb-price-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))' }}>
+                        {otherPlans.map((plan) => (
+                            <article key={plan.productId} className="gb-price">
+                                <div className="gb-price__name" style={{ fontSize: '1.05rem' }}>{plan.name}</div>
+                                <p className="gb-price__desc" style={{ minHeight: 'auto' }}>
+                                    Shared group buy access. Click Buy Now to add this plan to your cart.
+                                </p>
+                                <a
+                                    href={plan.cartUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="gb-btn gb-btn-blue"
+                                >
+                                    Buy Now
+                                </a>
+                            </article>
                         ))}
                     </div>
                 </div>

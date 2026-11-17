@@ -5,6 +5,7 @@ import { faqItems } from '../components/home/FaqHome';
 const HeaderFour = dynamic(() => import('../common/header/HeaderFour'), { ssr: true });
 const HeroHome = dynamic(() => import('../components/home/HeroHome'), { ssr: true });
 const PricingHome = dynamic(() => import('../components/home/PricingHome'), { ssr: true });
+const SingleToolsHome = dynamic(() => import('../components/home/SingleToolsHome'), { ssr: true });
 const ToolsHome = dynamic(() => import('../components/home/ToolsHome'), { ssr: true });
 const BenefitsHome = dynamic(() => import('../components/home/BenefitsHome'), { ssr: true });
 const ComparisonHome = dynamic(() => import('../components/home/ComparisonHome'), { ssr: true });
@@ -93,6 +94,7 @@ export default function Home() {
             <main>
                 <HeroHome />
                 <PricingHome />
+                <SingleToolsHome />
                 <ToolsHome />
                 <BenefitsHome />
                 <ComparisonHome />

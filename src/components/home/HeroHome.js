@@ -16,7 +16,7 @@ const HeroHome = () => {
                     </p>
                     <div className="gb-hero__actions">
                         <a href="#pricing" className="gb-btn gb-btn-primary">Explore Pricing Plans</a>
-                        <a href="#tools" className="gb-btn gb-btn-secondary">Browse Available Tools</a>
+                        <a href="#single-tools" className="gb-btn gb-btn-secondary">Browse Available Tools</a>
                     </div>
                     <ul className="gb-hero__meta">
                         <li>Multiple SEO Tools in One Place</li>

@@ -1556,24 +1556,11 @@ footer .gb-brandmark {
   box-shadow: 0 24px 60px rgba(5, 74, 218, 0.35);
 }
 .header-4 .main-menu ul li a {
-  position: relative;
   transition: color .25s ease !important;
 }
 .header-4 .main-menu ul li > a::after {
-  content: '';
-  position: absolute;
-  left: 14px;
-  right: 14px;
-  bottom: 6px;
-  height: 2px;
-  background: var(--gb-orange);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform .28s ease;
-}
-.header-4 .main-menu ul li > a:hover::after,
-.header-4 .main-menu ul li:hover > a::after {
-  transform: scaleX(1);
+  display: none !important;
+  content: none !important;
 }
 .footer-four .footer__widget ul li a {
   transition: color .25s ease, transform .25s ease, padding-left .25s ease !important;

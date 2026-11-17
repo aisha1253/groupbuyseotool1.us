@@ -4,9 +4,9 @@ import { faqItems } from '../components/home/FaqHome';
 
 const HeaderFour = dynamic(() => import('../common/header/HeaderFour'), { ssr: true });
 const HeroHome = dynamic(() => import('../components/home/HeroHome'), { ssr: true });
-const BenefitsHome = dynamic(() => import('../components/home/BenefitsHome'), { ssr: true });
-const ToolsHome = dynamic(() => import('../components/home/ToolsHome'), { ssr: true });
 const PricingHome = dynamic(() => import('../components/home/PricingHome'), { ssr: true });
+const ToolsHome = dynamic(() => import('../components/home/ToolsHome'), { ssr: true });
+const BenefitsHome = dynamic(() => import('../components/home/BenefitsHome'), { ssr: true });
 const ComparisonHome = dynamic(() => import('../components/home/ComparisonHome'), { ssr: true });
 const AudienceHome = dynamic(() => import('../components/home/AudienceHome'), { ssr: true });
 const HowItWorksHome = dynamic(() => import('../components/home/HowItWorksHome'), { ssr: true });
@@ -14,19 +14,22 @@ const WhyUsHome = dynamic(() => import('../components/home/WhyUsHome'), { ssr: t
 const ToolkitHome = dynamic(() => import('../components/home/ToolkitHome'), { ssr: true });
 const BigDataHome = dynamic(() => import('../components/home/BigDataHome'), { ssr: true });
 const SkillsHome = dynamic(() => import('../components/home/SkillsHome'), { ssr: true });
-const FaqHome = dynamic(() => import('../components/home/FaqHome'), { ssr: true });
 const ContactHome = dynamic(() => import('../components/home/ContactHome'), { ssr: true });
+const FaqHome = dynamic(() => import('../components/home/FaqHome'), { ssr: true });
 const FooterFour = dynamic(() => import('../common/footer/FooterFour'), { ssr: true });
 
 const SITE_URL = 'https://groupbuyseotool1.us';
-const PAGE_TITLE = 'groupbuyseotool: Cheap Group Buy SEO Tools for Agencies';
+const PAGE_TITLE = 'groupbuyseotool | Affordable SEO Tools and Shared Access';
 const PAGE_DESCRIPTION =
-    'Use groupbuyseotool to get premium SEO tools access at a fraction of the cost. Ahrefs group buy, Semrush group buy and more, with instant setup.';
+    'Explore groupbuyseotool for shared access to SEO tools, affordable monthly plans, keyword research, site audits, backlink analysis, and helpful support.';
+
+const HOME_FOOTER_BLURB =
+    'groupbuyseotool provides affordable shared access to SEO and digital marketing tools for freelancers, agencies, and website owners. Explore practical research and optimization tools through plans designed for different budgets and workflows. We operate independently and are not affiliated with Ahrefs, Semrush, Moz, or other third-party software providers.';
 
 const organizationJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'groupbuyseotool',
+    name: 'Group Buy SEO Tools',
     url: SITE_URL,
     email: 'admin@groupbuyseotool.us',
     description: PAGE_DESCRIPTION,
@@ -92,9 +95,9 @@ export default function Home() {
             <HeaderFour />
             <main>
                 <HeroHome />
-                <BenefitsHome />
-                <ToolsHome />
                 <PricingHome />
+                <ToolsHome />
+                <BenefitsHome />
                 <ComparisonHome />
                 <AudienceHome />
                 <HowItWorksHome />
@@ -102,10 +105,10 @@ export default function Home() {
                 <ToolkitHome />
                 <BigDataHome />
                 <SkillsHome />
-                <FaqHome />
                 <ContactHome />
+                <FaqHome />
             </main>
-            <FooterFour />
+            <FooterFour blurb={HOME_FOOTER_BLURB} />
         </>
     );
 }

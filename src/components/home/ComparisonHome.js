@@ -2,29 +2,34 @@ import React from 'react';
 
 const rows = [
     {
-        feature: 'Cost',
-        individual: 'Full price for each tool',
-        group: 'Shared cost, so a lower monthly spend',
+        feature: 'Monthly Cost',
+        individual: 'Separate subscription costs for each platform',
+        group: 'Shared access through a lower-cost plan',
     },
     {
-        feature: 'Number of tools',
-        individual: 'Usually one or two before the budget runs out',
-        group: 'Several tools available under one plan',
+        feature: 'Tool Selection',
+        individual: 'Tools purchased individually',
+        group: 'Multiple included tools depending on the plan',
     },
     {
         feature: 'Setup',
-        individual: 'Separate accounts and billing for each tool',
-        group: 'One plan, one place to get your access',
+        individual: 'Separate registration and billing for each provider',
+        group: 'Centralized plan selection and access instructions',
     },
     {
-        feature: 'Account type',
-        individual: 'Your own private account',
-        group: 'Shared access with fair use limits',
+        feature: 'Account Access',
+        individual: 'Individual account with provider-defined permissions',
+        group: 'Shared access with tool-specific conditions',
     },
     {
-        feature: 'Best for',
-        individual: 'Large teams with a bigger budget',
-        group: 'Freelancers, agencies and solopreneurs watching costs',
+        feature: 'Usage Limits',
+        individual: "Based on the provider's subscription tier",
+        group: 'Shared usage limits and available features',
+    },
+    {
+        feature: 'Best For',
+        individual: 'Users needing private accounts and full individual subscription capabilities',
+        group: 'Budget-conscious freelancers, agencies, and website owners',
     },
 ];
 
@@ -33,9 +38,9 @@ const ComparisonHome = () => {
         <section id="comparison" className="gb-section gb-section--dark gb-comparison-dark">
             <div className="container">
                 <div className="gb-section__head">
-                    <h2>Group Buy Access vs Buying Every Tool Yourself</h2>
+                    <h2>Group Buy SEO Tools vs Individual Subscriptions</h2>
                     <p>
-                        Individual subscriptions are powerful, but the costs add up quickly when you need more than one tool. Here is how the two options compare in practice.
+                        Buying separate subscriptions can become expensive when your work requires multiple SEO platforms. Shared access offers another option for people who need useful tools at a more manageable monthly cost.
                     </p>
                 </div>
                 <div className="gb-table-wrap">
@@ -59,7 +64,7 @@ const ComparisonHome = () => {
                     </table>
                 </div>
                 <p className="gb-note">
-                    If you want broad tool access and your budget matters, group buy SEO tools are a practical way to work with premium data.
+                    If you want access to multiple SEO research platforms without maintaining separate subscriptions, a group buy plan may be a practical option. Compare features, account types, and usage limits to decide which approach works best for you.
                 </p>
             </div>
         </section>

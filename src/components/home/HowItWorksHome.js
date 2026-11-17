@@ -3,19 +3,19 @@ import React from 'react';
 const steps = [
     {
         title: 'Choose Your Plan',
-        text: 'Compare Lite, Small and Mega, then pick the one that fits your workload and budget.',
+        text: 'Compare Lite, Small, and Mega to find a plan that matches your preferred tools, available budget, and SEO requirements.',
     },
     {
         title: 'Complete Your Order',
-        text: 'Check out in a few minutes and create your account.',
+        text: 'Select your subscription, review the order details, and complete the checkout process.',
     },
     {
-        title: 'Receive Your Access Details',
-        text: 'You get your login information quickly, so there is no long waiting period.',
+        title: 'Receive Access Instructions',
+        text: 'After your order is confirmed and access is ready, follow the provided instructions to open your included tools.',
     },
     {
-        title: 'Start Working',
-        text: 'Open your tools and begin keyword research, audits and reporting right away.',
+        title: 'Start Your SEO Work',
+        text: 'Use your available tools for keyword research, competitor analysis, backlink checks, content planning, and other supported tasks.',
     },
 ];
 
@@ -24,7 +24,10 @@ const HowItWorksHome = () => {
         <section id="how-it-works" className="gb-section">
             <div className="container">
                 <div className="gb-section__head">
-                    <h2>Get Started in Four Simple Steps</h2>
+                    <h2>Get Started with SEO Tools in Four Simple Steps</h2>
+                    <p>
+                        Our ordering process is designed to help you compare plans, understand your access options, and begin working with the tools included in your subscription.
+                    </p>
                 </div>
                 <div className="gb-steps">
                     {steps.map((step) => (

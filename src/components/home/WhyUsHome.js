@@ -2,24 +2,24 @@ import React from 'react';
 
 const points = [
     {
-        title: 'Dependable Uptime',
-        text: 'We keep our tools available so you are not stuck waiting when a deadline is close.',
+        title: 'Consistent Access Focus',
+        text: 'We work to keep included tools accessible and assist customers when problems occur. Since tools use shared access, occasional interruptions, provider restrictions, and usage limits may apply.',
     },
     {
-        title: 'Responsive Support',
-        text: 'If something does not work as expected, our team is here to help you get back on track.',
+        title: 'Helpful Customer Support',
+        text: 'Get assistance with common access problems, setup instructions, and plan-related questions through our available support channels.',
     },
     {
-        title: 'Fair, Affordable Pricing',
-        text: 'Our plans are priced for freelancers and agencies, so you can access more tools without stretching your budget.',
+        title: 'Affordable Monthly Pricing',
+        text: 'Our shared access plans offer a budget-friendly alternative to maintaining multiple individual SEO software subscriptions.',
     },
     {
-        title: 'Instant Access',
-        text: 'Once your order is complete, you can get set up quickly and start using your tools without delays.',
+        title: 'Straightforward Setup',
+        text: 'Choose your plan, complete your purchase, and follow the access instructions once your subscription is ready to use.',
     },
     {
-        title: 'Secure Experience',
-        text: 'Your account details and payments are handled with care, so you can focus on your work with confidence.',
+        title: 'Clear Access Conditions',
+        text: 'Understand the tools, features, and shared usage conditions included in your plan. We encourage customers to review access limitations and avoid storing sensitive project information in shared accounts.',
     },
 ];
 
@@ -28,8 +28,10 @@ const WhyUsHome = () => {
         <section id="why-us" className="gb-section">
             <div className="container">
                 <div className="gb-section__head">
-                    <h2>Why SEO Professionals Choose Us</h2>
-                    <p>Here is what you can expect when you use groupbuyseotool for your daily SEO work.</p>
+                    <h2>Why Choose Our Group Buy SEO Tools?</h2>
+                    <p>
+                        At groupbuyseotool, our focus is on making SEO software more affordable, accessible, and practical for people managing websites and digital marketing projects.
+                    </p>
                 </div>
                 <div className="gb-why-grid">
                     {points.map((point, i) => (

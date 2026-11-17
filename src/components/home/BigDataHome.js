@@ -1,10 +1,10 @@
 import React from 'react';
 
 const stats = [
-    { value: '50+', label: 'Premium SEO tools', source: 'In one subscription' },
-    { value: '99.9%', label: 'Platform uptime', source: 'Self-developed access' },
-    { value: '50K+', label: 'Happy marketers', source: 'Worldwide members' },
-    { value: '24/7', label: 'Live support', source: 'Chat · Skype · Ticket' },
+    { value: '$10/mo', label: 'Plans Starting From', source: 'Affordable shared access' },
+    { value: '3', label: 'Pricing Plans', source: 'Lite, Small, and Mega' },
+    { value: 'Multiple', label: 'SEO Tool Options', source: 'Research and optimization tools' },
+    { value: 'Support', label: 'Customer Assistance', source: 'Help with access and setup' },
 ];
 
 const BigDataHome = () => {
@@ -18,14 +18,17 @@ const BigDataHome = () => {
             <div className="container gb-bigdata__inner">
                 <div className="gb-bigdata__top">
                     <div>
-                        <span className="gb-bigdata__badge">Big Data, Shared Access</span>
+                        <span className="gb-bigdata__badge">Better Research. Smarter Decisions.</span>
                         <h2 className="gb-bigdata__title">
-                            Make Decisions with Real SEO Data, Not Guesswork
+                            Make SEO Decisions with Data, Not Guesswork
                         </h2>
                         <p className="gb-bigdata__text">
-                            Good SEO starts with good information. With access to industry standard platforms, you can study search demand, competitor strategies and backlink profiles in detail. That means better proposals for clients, smarter content plans for your own sites and fewer decisions made on instinct alone.
+                            Effective SEO begins with understanding what people search for, how competitors perform, and where your website can improve. With access to relevant SEO research platforms, you can explore keyword opportunities, examine backlink profiles, investigate technical issues, and develop more informed optimization strategies.
                         </p>
-                        <a href="#tools" className="gb-bigdata__link">Explore the Tools</a>
+                        <p className="gb-bigdata__text">
+                            Use these insights to plan useful content, evaluate competing websites, and support your SEO recommendations with research rather than assumptions.
+                        </p>
+                        <a href="#tools" className="gb-bigdata__link">Explore Available SEO Tools</a>
                     </div>
                 </div>
 

@@ -4,22 +4,25 @@ const plans = [
     {
         name: 'Lite',
         price: '10',
-        desc: 'Lite suits beginners and solo freelancers who want affordable access to core SEO tools without a big monthly commitment.',
-        tools: ['SMRu$H', 'Canva', 'Grammarly', 'Woorank', 'Spin Rewriter'],
+        desc: 'An affordable starting point for SEO beginners, bloggers, and independent freelancers who need access to essential research, writing, and optimization tools.',
+        tools: ['Semrush', 'Canva', 'Grammarly', 'WooRank', 'Spin Rewriter'],
+        cta: 'View Lite Plan',
         popular: false,
     },
     {
         name: 'Small',
         price: '15',
-        desc: 'Small fits growing freelancers and small teams who need more room to handle multiple projects and clients.',
-        tools: ['SMRu$H', 'Moz Pro', 'Majestic', 'Ubersuggest', 'Spyfu'],
+        desc: 'A practical choice for freelancers and growing businesses managing multiple websites or client projects. Explore a wider selection of research, analysis, and optimization tools.',
+        tools: ['Semrush', 'Moz Pro', 'Majestic', 'Ubersuggest', 'SpyFu'],
+        cta: 'View Small Plan',
         popular: true,
     },
     {
         name: 'Mega',
         price: '50',
-        desc: 'Mega is made for agencies and heavy users who want the broadest tool selection our plans offer in one place.',
-        tools: ['ARHFE$', 'SMRu$H', 'Moz Pro', 'Ubersuggest', 'Majestic'],
+        desc: 'Designed for agencies, experienced SEO professionals, and users who need broader access to research and marketing tools across different projects.',
+        tools: ['Ahrefs', 'Semrush', 'Moz Pro', 'Ubersuggest', 'Majestic'],
+        cta: 'View Mega Plan',
         popular: false,
     },
 ];
@@ -29,8 +32,10 @@ const PricingHome = () => {
         <section id="pricing" className="gb-section gb-pricing">
             <div className="container">
                 <div className="gb-section__head">
-                    <h2>Simple Plans for Every Stage of Your SEO Work</h2>
-                    <p>Pick the plan that matches how you work today and move up when your workload grows.</p>
+                    <h2>Affordable SEO Tool Plans for Every Stage of Your Work</h2>
+                    <p>
+                        Choose a shared access plan based on your budget, the tools you need, and the type of SEO projects you manage.
+                    </p>
                 </div>
                 <div className="gb-price-grid">
                     {plans.map((plan) => (
@@ -50,7 +55,7 @@ const PricingHome = () => {
                                 {plan.tools.map((tool) => (
                                     <li key={tool}>{tool}</li>
                                 ))}
-                                <li className="more">+ More tools</li>
+                                <li className="more">More Available Tools</li>
                             </ul>
                             <a
                                 href="https://members.seotoolsgroupbuy.us/signup"
@@ -58,13 +63,13 @@ const PricingHome = () => {
                                 rel="noopener noreferrer"
                                 className={`gb-btn ${plan.popular ? 'gb-btn-primary' : 'gb-btn-blue'}`}
                             >
-                                View Plans
+                                {plan.cta}
                             </a>
                         </article>
                     ))}
                 </div>
                 <p className="gb-note">
-                    Not sure which one to pick? Start with the plan closest to your current workload. You can always change later.
+                    Not sure which plan fits your workflow? Compare the included tools, available features, and usage conditions, or contact our support team before choosing.
                 </p>
             </div>
         </section>

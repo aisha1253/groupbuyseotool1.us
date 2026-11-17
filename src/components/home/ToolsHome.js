@@ -3,32 +3,32 @@ import React from 'react';
 const cards = [
     {
         title: 'Keyword and SERP Research',
-        text: 'Find search terms, check difficulty and see who already ranks for them before you create a single page.',
+        text: 'Discover relevant search terms, evaluate keyword difficulty, and examine search results. Build content strategies around topics your audience is searching for.',
         icon: 'fa-solid fa-magnifying-glass',
     },
     {
         title: 'Backlink Analysis',
-        text: 'Review your link profile, study competitor links and find new opportunities worth reaching out for.',
+        text: 'Explore backlink profiles, review referring domains, and examine competitor link sources. Identify potential outreach opportunities and understand how websites build authority.',
         icon: 'fa-solid fa-link',
     },
     {
-        title: 'Site Audits',
-        text: 'Spot technical issues, broken pages and on page problems that may be holding your rankings back.',
+        title: 'Technical Site Audits',
+        text: 'Find technical SEO issues, examine site health, and identify optimization opportunities. Use available audit tools to investigate broken links, crawl problems, and on-page SEO factors.',
         icon: 'fa-solid fa-stethoscope',
     },
     {
-        title: 'Rank Tracking',
-        text: 'Follow keyword positions over time and see which pages are gaining ground or slipping.',
+        title: 'Keyword Rank Tracking',
+        text: 'Monitor search visibility, examine keyword positions, and compare performance over time using the tracking capabilities available in your selected plan.',
         icon: 'fa-solid fa-arrow-up-right-dots',
     },
     {
-        title: 'Competitor Research',
-        text: 'See what your competitors rank for, where their traffic comes from and what content is working for them.',
+        title: 'Competitor SEO Research',
+        text: 'Explore competing websites, research their ranking keywords, and discover content opportunities. Use competitor insights to make more informed SEO decisions.',
         icon: 'fa-solid fa-users',
     },
     {
         title: 'Content Optimization',
-        text: 'Shape your articles and landing pages with data so every heading and topic has a reason to be there.',
+        text: 'Research relevant topics, organize keyword ideas, and improve content structure. Create pages that better address search intent and provide useful information to readers.',
         icon: 'fa-solid fa-pen-to-square',
     },
 ];
@@ -38,9 +38,9 @@ const ToolsHome = () => {
         <section id="tools" className="gb-section gb-section--tint">
             <div className="container">
                 <div className="gb-section__head">
-                    <h2>SEO Tools You Can Work With</h2>
+                    <h2>Essential SEO Tools for Research, Analysis, and Growth</h2>
                     <p>
-                        Our plans cover the main areas of day to day SEO work. From Ahrefs group buy and Semrush group buy access to other popular platforms, you get tools for research, analysis and tracking in one place.
+                        From ahrefs group buy and semrush group buy options to keyword, content, and competitor research platforms, explore tools that can support different stages of your SEO workflow.
                     </p>
                 </div>
                 <div className="gb-features gb-features--six">
@@ -55,7 +55,7 @@ const ToolsHome = () => {
                     ))}
                 </div>
                 <p className="gb-note">
-                    Tool availability can differ by plan. Please check the plan details before you order.
+                    Tool availability, usage limits, and supported features vary by plan. Review the included tools and access conditions before ordering.
                 </p>
             </div>
         </section>

@@ -12,16 +12,16 @@ const HeroHome = () => {
                         Access Premium SEO Tools for Less with <span>groupbuyseotool</span>
                     </h1>
                     <p className="gb-hero__lead">
-                        Get shared access to the SEO platforms you rely on for keyword research, audits, backlink checks and rank tracking. Our group buy SEO tools plans are made for freelancers, agencies and solopreneurs who want the data without paying full price for every subscription.
+                        Get affordable shared access to popular SEO platforms for keyword research, competitor analysis, backlink checks, site audits, and rank tracking. Our group buy seo tools plans help freelancers, agencies, and website owners work with useful research tools without paying for multiple individual subscriptions.
                     </p>
                     <div className="gb-hero__actions">
-                        <a href="#pricing" className="gb-btn gb-btn-primary">View Plans</a>
-                        <a href="#tools" className="gb-btn gb-btn-secondary">See Available Tools</a>
+                        <a href="#pricing" className="gb-btn gb-btn-primary">Explore Pricing Plans</a>
+                        <a href="#tools" className="gb-btn gb-btn-secondary">Browse Available Tools</a>
                     </div>
                     <ul className="gb-hero__meta">
-                        <li>Multiple SEO tools in one place</li>
-                        <li>Reliable uptime you can plan around</li>
-                        <li>Support when you need it</li>
+                        <li>Multiple SEO Tools in One Place</li>
+                        <li>Affordable Shared Access Plans</li>
+                        <li>Helpful Customer Support</li>
                     </ul>
                 </div>
             </div>

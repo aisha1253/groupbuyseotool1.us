@@ -3,35 +3,35 @@ import React, { useState } from 'react';
 export const faqItems = [
     {
         q: 'What is groupbuyseotool?',
-        a: 'It is a service that gives you shared access to premium SEO tools at a lower cost than buying each subscription yourself. You choose a plan, get your access details and start working.',
+        a: 'Group Buy SEO Tools is an independent service that provides shared access to a selection of SEO and digital marketing platforms through affordable subscription plans. It is designed for freelancers, agencies, beginners, and website owners who want access to useful research software without purchasing every tool individually.',
     },
     {
         q: 'What are group buy SEO tools?',
-        a: 'Group buy means several users share the cost of a premium tool, so everyone pays less than they would for a private subscription. It is popular with freelancers and small agencies who need more than one tool.',
+        a: 'Group buy SEO tools are software access services that use a shared subscription model. Instead of purchasing a separate individual subscription for every platform, customers choose a shared access plan that includes selected tools, subject to available features and usage restrictions.',
     },
     {
         q: 'Is the access shared with other users?',
-        a: 'Yes. Access is shared, which is how we keep prices low. Fair use applies so every member gets a smooth experience.',
+        a: 'Yes. Our service operates through a shared access model. This means accounts, available features, and usage allowances may differ from individual subscriptions purchased directly from software providers. Review your chosen plan\'s access conditions before ordering.',
     },
     {
-        q: 'Are you affiliated with Ahrefs, Semrush or Moz?',
-        a: 'No. We are an independent service and not partnered with or endorsed by any tool provider. Their names are used only to describe the kind of tools available.',
+        q: 'Are you affiliated with Ahrefs, Semrush, or Moz?',
+        a: 'No. Group Buy SEO Tools is an independent service and is not affiliated with Ahrefs, Semrush, Moz, or other third-party software providers. All product names and trademarks belong to their respective owners.',
     },
     {
         q: 'How quickly can I start after ordering?',
-        a: 'Once your order is confirmed, you receive your access details and can begin working quickly.',
+        a: 'Access timing depends on order confirmation, the selected plan, and tool availability. Once your subscription is ready, you can follow the provided setup instructions. Contact support if you experience a delay or need help getting started.',
     },
     {
-        q: 'Which tools are included in each plan?',
-        a: 'Tool availability differs by plan. The current list is shown on the pricing section, so you can compare before you order.',
+        q: 'Which SEO tools are included in each plan?',
+        a: 'Tool selection depends on your subscription. Lite, Small, and Mega offer different combinations of SEO and marketing software. Visit the pricing section or individual plan details to review current inclusions, available features, and usage limits.',
     },
     {
-        q: 'What if a tool stops working?',
-        a: 'Contact our support team and tell us which tool is affected. We will look into it and work to get you back up and running.',
+        q: 'What happens if a tool stops working?',
+        a: 'If an included tool becomes unavailable or does not work as expected, contact our support team with the relevant details. We can help investigate access issues and provide available troubleshooting guidance. Some interruptions may depend on third-party providers.',
     },
     {
         q: 'Can I upgrade my plan later?',
-        a: 'Yes, you can move to a higher plan when your workload grows. Contact us and we will help you switch.',
+        a: 'You can review other available plans as your SEO requirements change. If you want to switch from your current subscription, contact support to confirm the available upgrade options and any applicable conditions.',
     },
 ];
 
@@ -43,7 +43,7 @@ const FaqHome = () => {
     };
 
     return (
-        <section id="faq" className="gb-section">
+        <section id="faq" className="gb-section gb-section--tint">
             <div className="container">
                 <div className="gb-section__head">
                     <h2>Frequently Asked Questions</h2>

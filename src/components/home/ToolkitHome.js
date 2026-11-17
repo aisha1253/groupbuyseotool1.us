@@ -4,28 +4,28 @@ const cards = [
     {
         img: '/assets/img/showcase/gb-keyword-research.jpg',
         title: 'Keyword Research',
-        text: 'Find search terms your audience actually uses, check their difficulty and build a content plan around real demand.',
+        text: "Discover relevant keywords, explore search demand, and evaluate ranking competition. Use research insights to plan website pages and content that match your audience's needs.",
         w: 800,
         h: 600,
     },
     {
         img: '/assets/img/showcase/gb-backlink-intel.jpg',
-        title: 'Backlink Intel',
-        text: 'See who links to you and your competitors, then spot the link opportunities worth chasing.',
+        title: 'Backlink Intelligence',
+        text: 'Examine referring domains, study competitor backlink profiles, and identify potential link-building opportunities to investigate further.',
         w: 800,
         h: 600,
     },
     {
         img: '/assets/img/showcase/gb-rank-tracking.jpg',
-        title: 'Rank Tracking',
-        text: 'Monitor your positions over time so you know exactly which pages are moving and which need attention.',
+        title: 'Ranking Insights',
+        text: 'Review keyword positions, compare search visibility, and track changes using the capabilities available in your selected SEO tools.',
         w: 800,
         h: 600,
     },
     {
         img: '/assets/img/showcase/gb-content-workflows.jpg',
         title: 'Content Workflows',
-        text: 'Plan, optimize and refine your content with data to back every headline, heading and topic choice.',
+        text: 'Research topics, evaluate competing pages, and organize content ideas. Build a more structured approach to blog posts, landing pages, and website optimization.',
         w: 800,
         h: 600,
     },
@@ -33,12 +33,12 @@ const cards = [
 
 const ToolkitHome = () => {
     return (
-        <section id="toolkit" className="gb-section gb-showcase">
+        <section id="toolkit" className="gb-section gb-showcase gb-section--tint">
             <div className="container">
                 <div className="gb-section__head">
-                    <h2>The Toolkit Behind Your Next Ranking Win</h2>
+                    <h2>Your Essential SEO Toolkit in One Place</h2>
                     <p>
-                        From Ahrefs group buy and Semrush group buy access to other tools in your plan, groupbuyseotool brings the essentials together so you can work faster.
+                        From keyword discovery to competitor analysis, groupbuyseotool brings together shared access options for tools that support practical research, optimization, and website growth strategies.
                     </p>
                 </div>
                 <div className="gb-showcase__grid">

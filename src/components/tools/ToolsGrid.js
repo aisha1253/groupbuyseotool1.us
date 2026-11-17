@@ -60,7 +60,7 @@ const ToolsGrid = () => {
                                                 padding: '10px 20px',
                                                 borderRadius: '25px',
                                                 border: 'none',
-                                                background: selectedCategory === category ? 'linear-gradient(45deg, #667eea, #764ba2)' : '#f5f5f5',
+                                                background: selectedCategory === category ? 'linear-gradient(45deg, #3A57FC, #FF8800)' : '#f5f5f5',
                                                 color: selectedCategory === category ? 'white' : '#333',
                                                 cursor: 'pointer',
                                                 transition: 'all 0.3s ease',
@@ -109,7 +109,7 @@ const ToolsGrid = () => {
                                                 fontSize: '12px',
                                                 marginRight: '8px',
                                                 marginBottom: '8px',
-                                                color: '#667eea'
+                                                color: '#3A57FC'
                                             }}>
                                                 {tag}
                                             </span>
@@ -124,7 +124,7 @@ const ToolsGrid = () => {
                     <div className="row mt-60">
                         <div className="col-xl-12 text-center">
                             <div className="tools-cta wow fadeInUp" data-wow-delay=".3s" style={{
-                                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                background: 'linear-gradient(135deg, #3A57FC 0%, #FF8800 100%)',
                                 borderRadius: '20px',
                                 padding: '50px 30px',
                                 color: 'white'
@@ -135,7 +135,7 @@ const ToolsGrid = () => {
                                 </p>
                                 <Link href="/pricing" className="thm-btn-2" style={{
                                     background: 'white',
-                                    color: '#667eea',
+                                    color: '#3A57FC',
                                     padding: '15px 40px',
                                     borderRadius: '30px',
                                     textDecoration: 'none',

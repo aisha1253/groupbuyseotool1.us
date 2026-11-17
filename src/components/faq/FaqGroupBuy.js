@@ -26,23 +26,23 @@ const FaqGroupBuy = () => {
                                 style={{
                                     display: 'inline-block',
                                     padding: '15px 35px',
-                                    backgroundColor: '#667eea',
+                                    backgroundColor: '#3A57FC',
                                     color: '#fff',
                                     borderRadius: '8px',
                                     textDecoration: 'none',
                                     fontWeight: '600',
                                     fontSize: '16px',
-                                    border: '2px solid #667eea',
+                                    border: '2px solid #3A57FC',
                                     transition: 'all 0.3s ease',
                                     cursor: 'pointer'
                                 }}
                                 onMouseEnter={(e) => {
-                                    e.target.style.backgroundColor = '#5568d3';
-                                    e.target.style.borderColor = '#5568d3';
+                                    e.target.style.backgroundColor = '#054ADA';
+                                    e.target.style.borderColor = '#054ADA';
                                 }}
                                 onMouseLeave={(e) => {
-                                    e.target.style.backgroundColor = '#667eea';
-                                    e.target.style.borderColor = '#667eea';
+                                    e.target.style.backgroundColor = '#3A57FC';
+                                    e.target.style.borderColor = '#3A57FC';
                                 }}
                             >
                                 Explore Now
@@ -194,23 +194,23 @@ const FaqGroupBuy = () => {
                                 style={{
                                     display: 'inline-block',
                                     padding: '15px 35px',
-                                    backgroundColor: '#667eea',
+                                    backgroundColor: '#3A57FC',
                                     color: '#fff',
                                     borderRadius: '8px',
                                     textDecoration: 'none',
                                     fontWeight: '600',
                                     fontSize: '16px',
-                                    border: '2px solid #667eea',
+                                    border: '2px solid #3A57FC',
                                     transition: 'all 0.3s ease',
                                     cursor: 'pointer'
                                 }}
                                 onMouseEnter={(e) => {
-                                    e.target.style.backgroundColor = '#5568d3';
-                                    e.target.style.borderColor = '#5568d3';
+                                    e.target.style.backgroundColor = '#054ADA';
+                                    e.target.style.borderColor = '#054ADA';
                                 }}
                                 onMouseLeave={(e) => {
-                                    e.target.style.backgroundColor = '#667eea';
-                                    e.target.style.borderColor = '#667eea';
+                                    e.target.style.backgroundColor = '#3A57FC';
+                                    e.target.style.borderColor = '#3A57FC';
                                 }}
                             >
                                 Explore Now
@@ -315,23 +315,23 @@ const FaqGroupBuy = () => {
                                 style={{
                                     display: 'inline-block',
                                     padding: '15px 35px',
-                                    backgroundColor: '#667eea',
+                                    backgroundColor: '#3A57FC',
                                     color: '#fff',
                                     borderRadius: '8px',
                                     textDecoration: 'none',
                                     fontWeight: '600',
                                     fontSize: '16px',
-                                    border: '2px solid #667eea',
+                                    border: '2px solid #3A57FC',
                                     transition: 'all 0.3s ease',
                                     cursor: 'pointer'
                                 }}
                                 onMouseEnter={(e) => {
-                                    e.target.style.backgroundColor = '#5568d3';
-                                    e.target.style.borderColor = '#5568d3';
+                                    e.target.style.backgroundColor = '#054ADA';
+                                    e.target.style.borderColor = '#054ADA';
                                 }}
                                 onMouseLeave={(e) => {
-                                    e.target.style.backgroundColor = '#667eea';
-                                    e.target.style.borderColor = '#667eea';
+                                    e.target.style.backgroundColor = '#3A57FC';
+                                    e.target.style.borderColor = '#3A57FC';
                                 }}
                             >
                                 Explore Now
@@ -343,7 +343,7 @@ const FaqGroupBuy = () => {
                     <div className="row">
                         <div className="col-xl-12">
                             <div className="faq-cta wow fadeInUp" data-wow-delay=".3s" style={{
-                                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                background: 'linear-gradient(135deg, #3A57FC 0%, #FF8800 100%)',
                                 borderRadius: '20px',
                                 padding: '60px 40px',
                                 textAlign: 'center',
@@ -355,7 +355,7 @@ const FaqGroupBuy = () => {
                                 </p>
                                 <Link href="/contact" className="thm-btn-2" style={{
                                     background: 'white',
-                                    color: '#667eea',
+                                    color: '#3A57FC',
                                     padding: '15px 40px',
                                     borderRadius: '30px',
                                     textDecoration: 'none',

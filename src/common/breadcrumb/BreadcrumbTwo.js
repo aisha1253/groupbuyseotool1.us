@@ -1,52 +1,22 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-const BreadcrumbTwo = ({heading = "About Us", currentPage = "About"}) => {
-    useEffect(() => {
-
-        // Data Background Js
-        $("[data-background]").each(function() {
-            $(this).css(
-                "background-image",
-                "url( " + $(this).attr("data-background") + "  )"
-            );
-        });
-            
-    }, []);
+const BreadcrumbTwo = ({ heading = "About Us", currentPage = "About" }) => {
     return (
-        <>
-            {/* breadcrumb start */}
-            <div className="page-header">
-                <div className="page-header__img1">
-                    <img src="/assets/img/shape/1.svg" alt="img" />
-                </div>
-                <div className="page-header__img2">
-                    <img src="/assets/img/shape/2.svg" alt="img" />
-                </div>
-                <div className="page-header__img3">
-                    <img src="/assets/img/shape/3.svg" alt="img" />
-                </div>
-                <div className="page-header__img4">
-                    <img src="/assets/img/shape/4.svg" alt="img" />
-                </div>
-                <div className="page-header__bg" data-background="/assets/img/backgrounds/breadcrumb.jpg"></div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-12">
-                            <div className="page-header__wrapper">
-                                <div className="page-header__content">
-                                    <h2>{heading}</h2>
-                                    <div className="page-header__menu">
-                                        <p className="no-breadcrumb-navigation">{currentPage}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section className="gb-hero" style={{ minHeight: 'auto', padding: '110px 0 64px' }}>
+            <div className="gb-hero__glow gb-hero__glow--1" aria-hidden="true" />
+            <div className="gb-hero__grid" aria-hidden="true" />
+            <div className="container">
+                <div className="gb-hero__inner">
+                    <h1 className="gb-hero__brand" style={{ fontSize: 'clamp(32px, 5vw, 52px)' }}>
+                        {heading}
+                    </h1>
+                    <p style={{ color: 'rgba(255,255,255,.8)', fontWeight: 600, margin: 0 }}>
+                        {currentPage}
+                    </p>
                 </div>
             </div>
-            {/* breadcrumb end */}
-        </>
-    )
-}
+        </section>
+    );
+};
 
 export default BreadcrumbTwo;

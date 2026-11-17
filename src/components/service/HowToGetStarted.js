@@ -4,36 +4,27 @@ import { HowToGetStartedData } from '@/data/service';
 
 const HowToGetStarted = () => {
     return (
-        <>
-            {/* how to get started section start */}
-            <div className="service-three pt-140 pb-120">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-12 text-center mb-50 wow fadeInUp" data-wow-delay=".3s">
-                            <h2 className="section-title__two-title">How to Get Started</h2>
-                            <p className="mt-20">Simple Steps to Access Premium SEO Tools</p>
-                        </div>
-                    </div>
-                    <div className="row">
-                        {HowToGetStartedData.map((item, i) => (
-                            <div key={i} className="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay={item.delay}>
-                                <div className="service-three__single mb-30">
-                                    <div className="service-three__single-img">
-                                        <img src={item.icon} alt={item.alt} />
-                                    </div>
-                                    <h3><Link href={item.link}>{item.heading}</Link></h3>
-                                    <p>{item.description}</p>
-                                    <span>{item.service_no}</span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+        <section className="gb-section gb-section--tint">
+            <div className="container">
+                <div className="gb-section__head">
+                    <div className="gb-eyebrow">Get started</div>
+                    <h2>How to get started</h2>
+                    <p>Four simple steps to unlock premium SEO tools.</p>
+                </div>
+
+                <div className="gb-steps">
+                    {HowToGetStartedData.map((item, i) => (
+                        <article key={item.id || i} className="gb-step">
+                            <h3>
+                                <Link href={item.link}>{item.heading}</Link>
+                            </h3>
+                            <p>{item.description}</p>
+                        </article>
+                    ))}
                 </div>
             </div>
-            {/* how to get started section end */}
-        </>
-    )
-}
+        </section>
+    );
+};
 
 export default HowToGetStarted;
-

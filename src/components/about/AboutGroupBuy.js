@@ -21,24 +21,24 @@ const AboutGroupBuy = () => {
                                     style={{
                                         display: 'inline-block',
                                         padding: '15px 35px',
-                                        backgroundColor: '#667eea',
+                                        backgroundColor: '#3A57FC',
                                         color: '#fff',
                                         borderRadius: '8px',
                                         textDecoration: 'none',
                                         fontWeight: '600',
                                         fontSize: '16px',
-                                        border: '2px solid #667eea',
+                                        border: '2px solid #3A57FC',
                                         transition: 'all 0.3s ease',
                                         cursor: 'pointer',
                                         marginTop: '20px'
                                     }}
                                     onMouseEnter={(e) => {
-                                        e.target.style.backgroundColor = '#5568d3';
-                                        e.target.style.borderColor = '#5568d3';
+                                        e.target.style.backgroundColor = '#054ADA';
+                                        e.target.style.borderColor = '#054ADA';
                                     }}
                                     onMouseLeave={(e) => {
-                                        e.target.style.backgroundColor = '#667eea';
-                                        e.target.style.borderColor = '#667eea';
+                                        e.target.style.backgroundColor = '#3A57FC';
+                                        e.target.style.borderColor = '#3A57FC';
                                     }}
                                 >
                                     Explore Now
@@ -51,7 +51,7 @@ const AboutGroupBuy = () => {
                     <div className="row mb-80">
                         <div className="col-xxl-12">
                             <div className="about-services wow fadeInUp" data-wow-delay=".5s" style={{
-                                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                background: 'linear-gradient(135deg, #3A57FC 0%, #FF8800 100%)',
                                 borderRadius: '20px',
                                 padding: '50px',
                                 color: 'white'
@@ -71,7 +71,7 @@ const AboutGroupBuy = () => {
                                             display: 'inline-block',
                                             padding: '15px 35px',
                                             backgroundColor: '#fff',
-                                            color: '#667eea',
+                                            color: '#3A57FC',
                                             borderRadius: '8px',
                                             textDecoration: 'none',
                                             fontWeight: '600',
@@ -103,7 +103,7 @@ const AboutGroupBuy = () => {
                                 padding: '40px',
                                 boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
                                 height: '100%',
-                                border: '2px solid #667eea'
+                                border: '2px solid #3A57FC'
                             }}>
                                 <div className="icon mb-30">
                                     <img src="/assets/img/services/service-3-1.svg" alt="Mission" style={{width: '60px', height: '60px'}} />
@@ -122,7 +122,7 @@ const AboutGroupBuy = () => {
                                 padding: '40px',
                                 boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
                                 height: '100%',
-                                border: '2px solid #764ba2'
+                                border: '2px solid #FF8800'
                             }}>
                                 <div className="icon mb-30">
                                     <img src="/assets/img/services/service-3-2.svg" alt="Vision" style={{width: '60px', height: '60px'}} />
@@ -141,7 +141,7 @@ const AboutGroupBuy = () => {
                                 padding: '40px',
                                 boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
                                 height: '100%',
-                                border: '2px solid #667eea'
+                                border: '2px solid #3A57FC'
                             }}>
                                 <div className="icon mb-30">
                                     <img src="/assets/img/services/service-3-3.svg" alt="Values" style={{width: '60px', height: '60px'}} />
@@ -164,23 +164,23 @@ const AboutGroupBuy = () => {
                                 style={{
                                     display: 'inline-block',
                                     padding: '15px 35px',
-                                    backgroundColor: '#667eea',
+                                    backgroundColor: '#3A57FC',
                                     color: '#fff',
                                     borderRadius: '8px',
                                     textDecoration: 'none',
                                     fontWeight: '600',
                                     fontSize: '16px',
-                                    border: '2px solid #667eea',
+                                    border: '2px solid #3A57FC',
                                     transition: 'all 0.3s ease',
                                     cursor: 'pointer'
                                 }}
                                 onMouseEnter={(e) => {
-                                    e.target.style.backgroundColor = '#5568d3';
-                                    e.target.style.borderColor = '#5568d3';
+                                    e.target.style.backgroundColor = '#054ADA';
+                                    e.target.style.borderColor = '#054ADA';
                                 }}
                                 onMouseLeave={(e) => {
-                                    e.target.style.backgroundColor = '#667eea';
-                                    e.target.style.borderColor = '#667eea';
+                                    e.target.style.backgroundColor = '#3A57FC';
+                                    e.target.style.borderColor = '#3A57FC';
                                 }}
                             >
                                 Explore Now

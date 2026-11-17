@@ -9,14 +9,14 @@ const ContactInfo = () => {
             title: "Email Support",
             value: "admin@groupbuyseotool.us",
             subtitle: "24/7 Support Available",
-            color: "#667eea"
+            color: "#3A57FC"
         },
         {
             icon: "fa-comments",
             title: "Live Chat",
             value: "Available on our website",
             subtitle: "Quick response time",
-            color: "#764ba2"
+            color: "#FF8800"
         },
         {
             icon: "fa-brands fa-whatsapp",
@@ -30,7 +30,7 @@ const ContactInfo = () => {
             title: "Ticket System",
             value: "Create support tickets",
             subtitle: "Track your requests",
-            color: "#764ba2"
+            color: "#FF8800"
         }
     ];
 
@@ -110,7 +110,7 @@ const ContactInfo = () => {
                                         <i className={`fas ${channel.icon}`} style={{fontSize: '32px', color: 'white'}}></i>
                                     </div>
                                     <h3 style={{fontSize: '22px', fontWeight: 'bold', marginBottom: '10px', color: '#333'}}>{channel.title}</h3>
-                                    <p style={{fontSize: '16px', color: '#667eea', fontWeight: '600', marginBottom: '8px'}}>{channel.value}</p>
+                                    <p style={{fontSize: '16px', color: '#3A57FC', fontWeight: '600', marginBottom: '8px'}}>{channel.value}</p>
                                     <p style={{fontSize: '14px', color: '#666'}}>{channel.subtitle}</p>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@ const ContactInfo = () => {
                                     right: '-50px',
                                     width: '100px',
                                     height: '100px',
-                                    background: 'linear-gradient(45deg, #667eea, #764ba2)',
+                                    background: 'linear-gradient(45deg, #3A57FC, #FF8800)',
                                     borderRadius: '50%',
                                     opacity: '0.1'
                                 }}></div>
@@ -153,7 +153,7 @@ const ContactInfo = () => {
                                     left: '-30px',
                                     width: '60px',
                                     height: '60px',
-                                    background: 'linear-gradient(45deg, #764ba2, #667eea)',
+                                    background: 'linear-gradient(45deg, #FF8800, #3A57FC)',
                                     borderRadius: '50%',
                                     opacity: '0.1'
                                 }}></div>
@@ -183,7 +183,7 @@ const ContactInfo = () => {
                                             <div style={{
                                                 width: '50px',
                                                 height: '50px',
-                                                background: 'linear-gradient(45deg, #667eea, #764ba2)',
+                                                background: 'linear-gradient(45deg, #3A57FC, #FF8800)',
                                                 borderRadius: '50%',
                                                 display: 'flex',
                                                 alignItems: 'center',
@@ -195,7 +195,7 @@ const ContactInfo = () => {
                                                 <i className="fas fa-calendar-week"></i>
                                             </div>
                                             <h4 style={{color: '#333', marginBottom: '10px', fontSize: '18px', fontWeight: '600'}}>Monday - Friday</h4>
-                                            <p style={{fontSize: '16px', color: '#667eea', fontWeight: '600'}}>9:00 AM - 6:00 PM</p>
+                                            <p style={{fontSize: '16px', color: '#3A57FC', fontWeight: '600'}}>9:00 AM - 6:00 PM</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-4 col-md-6 mb-30" style={{textAlign: 'center'}}>
@@ -212,7 +212,7 @@ const ContactInfo = () => {
                                             <div style={{
                                                 width: '50px',
                                                 height: '50px',
-                                                background: 'linear-gradient(45deg, #667eea, #764ba2)',
+                                                background: 'linear-gradient(45deg, #3A57FC, #FF8800)',
                                                 borderRadius: '50%',
                                                 display: 'flex',
                                                 alignItems: 'center',
@@ -224,7 +224,7 @@ const ContactInfo = () => {
                                                 <i className="fas fa-calendar-day"></i>
                                             </div>
                                             <h4 style={{color: '#333', marginBottom: '10px', fontSize: '18px', fontWeight: '600'}}>Saturday</h4>
-                                            <p style={{fontSize: '16px', color: '#667eea', fontWeight: '600'}}>10:00 AM - 4:00 PM</p>
+                                            <p style={{fontSize: '16px', color: '#3A57FC', fontWeight: '600'}}>10:00 AM - 4:00 PM</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-4 col-md-12 mb-30" style={{textAlign: 'center'}}>
@@ -259,7 +259,7 @@ const ContactInfo = () => {
                                 </div>
                                 
                                 <div style={{
-                                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                    background: 'linear-gradient(135deg, #3A57FC 0%, #FF8800 100%)',
                                     color: 'white',
                                     padding: '20px 30px',
                                     borderRadius: '15px',
@@ -299,7 +299,7 @@ const ContactInfo = () => {
                                     <p style={{color: '#666', lineHeight: '1.6', marginBottom: '15px', fontSize: '14px'}}>{service.description}</p>
                                     <ul style={{listStyle: 'none', padding: 0}}>
                                         {service.features.map((feature, i) => (
-                                            <li key={i} style={{padding: '5px 0', color: '#667eea', fontSize: '13px'}}>
+                                            <li key={i} style={{padding: '5px 0', color: '#3A57FC', fontSize: '13px'}}>
                                                 <i className="fas fa-check-circle" style={{marginRight: '8px', fontSize: '12px'}}></i>
                                                 {feature}
                                             </li>
@@ -329,9 +329,9 @@ const ContactInfo = () => {
                                         padding: '12px 25px',
                                         borderRadius: '25px',
                                         textDecoration: 'none',
-                                        color: '#667eea',
+                                        color: '#3A57FC',
                                         fontWeight: '600',
-                                        border: '2px solid #667eea',
+                                        border: '2px solid #3A57FC',
                                         transition: 'all 0.3s ease'
                                     }}>How It Works</Link>
                                     <Link href="/faq" style={{
@@ -339,9 +339,9 @@ const ContactInfo = () => {
                                         padding: '12px 25px',
                                         borderRadius: '25px',
                                         textDecoration: 'none',
-                                        color: '#667eea',
+                                        color: '#3A57FC',
                                         fontWeight: '600',
-                                        border: '2px solid #667eea',
+                                        border: '2px solid #3A57FC',
                                         transition: 'all 0.3s ease'
                                     }}>Pricing & Payment</Link>
                                     <Link href="/faq" style={{
@@ -349,9 +349,9 @@ const ContactInfo = () => {
                                         padding: '12px 25px',
                                         borderRadius: '25px',
                                         textDecoration: 'none',
-                                        color: '#667eea',
+                                        color: '#3A57FC',
                                         fontWeight: '600',
-                                        border: '2px solid #667eea',
+                                        border: '2px solid #3A57FC',
                                         transition: 'all 0.3s ease'
                                     }}>Technical Issues</Link>
                                     <Link href="/faq" style={{
@@ -359,9 +359,9 @@ const ContactInfo = () => {
                                         padding: '12px 25px',
                                         borderRadius: '25px',
                                         textDecoration: 'none',
-                                        color: '#667eea',
+                                        color: '#3A57FC',
                                         fontWeight: '600',
-                                        border: '2px solid #667eea',
+                                        border: '2px solid #3A57FC',
                                         transition: 'all 0.3s ease'
                                     }}>Account Management</Link>
                                 </div>
@@ -388,7 +388,7 @@ const ContactInfo = () => {
                                     <h4 style={{fontSize: '20px', fontWeight: 'bold', marginBottom: '10px', color: '#333'}}>{item.channel}</h4>
                                     <p style={{fontSize: '14px', color: '#666', marginBottom: '15px'}}>{item.description}</p>
                                     <div style={{
-                                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                        background: 'linear-gradient(135deg, #3A57FC 0%, #FF8800 100%)',
                                         color: 'white',
                                         padding: '10px 20px',
                                         borderRadius: '25px',

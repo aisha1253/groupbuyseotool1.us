@@ -75,7 +75,7 @@ const OurTeam = () => {
                                         </h3>
                                         <p style={{
                                             fontSize: '16px',
-                                            color: '#667eea',
+                                            color: '#3A57FC',
                                             fontWeight: '600',
                                             marginBottom: '15px'
                                         }}>

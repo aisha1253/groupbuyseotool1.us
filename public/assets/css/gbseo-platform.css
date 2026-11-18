@@ -339,6 +339,21 @@ a { transition: color .2s ease, background .2s ease, transform .2s ease, box-sha
   transform: translateY(-50%);
   background: var(--gb-orange);
 }
+.gb-hero__price {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto 20px;
+  padding: 8px 20px;
+  font-family: var(--gb-display);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #fff;
+  background: rgba(255, 136, 0, 0.18);
+  border: 1px solid rgba(255, 136, 0, 0.45);
+  border-radius: 999px;
+}
 .gb-hero__orb { display: none !important; }
 
 /* ---------- Logo strip ---------- */
@@ -772,11 +787,32 @@ a { transition: color .2s ease, background .2s ease, transform .2s ease, box-sha
   margin: 0;
   color: var(--gb-ink);
 }
+.gb-tool-card__price {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: var(--gb-display);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--gb-blue);
+}
 .gb-tool-card .gb-btn {
   width: 100%;
   justify-content: center;
   padding: 10px 14px;
   font-size: 14px;
+}
+.gb-tool-card__actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+.gb-tool-card__actions .gb-btn {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  font-size: 13.5px;
+  white-space: nowrap;
 }
 .gb-tools-more {
   display: flex;
@@ -1736,6 +1772,110 @@ footer .gb-brandmark {
 .scroll-to-top:hover {
   transform: translateY(-3px) scale(1.06);
   box-shadow: 0 10px 24px rgba(255, 136, 0, 0.4);
+}
+
+/* ---------- Tool detail page (logo left / details right) ---------- */
+.gb-detail-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  animation: gbFadeUp .8s ease both;
+}
+@media (min-width: 992px) {
+  .gb-detail-hero__inner {
+    grid-template-columns: 340px minmax(0, 1fr);
+    gap: 56px;
+    align-items: start;
+  }
+}
+.gb-detail-hero__aside { align-self: start; }
+@media (min-width: 992px) {
+  .gb-detail-hero__aside { position: sticky; top: 120px; }
+}
+.gb-detail-hero__logocard {
+  background: #fff;
+  border-radius: 24px;
+  padding: 36px 24px 28px;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(4, 22, 74, 0.28);
+}
+.gb-detail-hero__logocard img {
+  display: block;
+  width: 132px;
+  height: 132px;
+  object-fit: contain;
+  margin: 0 auto 20px;
+}
+.gb-detail-hero__badge {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--gb-blue);
+  background: var(--gb-blue-soft);
+  margin-bottom: 14px;
+}
+.gb-detail-hero__logoname {
+  font-family: var(--gb-display);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--gb-ink);
+  margin: 0 0 6px;
+}
+.gb-detail-hero__logosub {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gb-muted);
+}
+.gb-detail-hero__main { min-width: 0; }
+.gb-detail-hero__main .gb-hero__brand {
+  font-size: clamp(30px, 4.4vw, 50px);
+  margin-bottom: 16px;
+}
+.gb-detail-hero__main .gb-hero__price { margin: 0 0 20px; }
+.gb-detail-hero__main .gb-hero__lead {
+  max-width: none;
+  margin: 0 0 32px;
+}
+.gb-detail-hero__main .gb-hero__actions {
+  justify-content: flex-start;
+  margin-bottom: 32px;
+}
+.gb-detail-hero__main .gb-hero__meta { justify-content: flex-start; }
+
+.gb-checklist {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+@media (min-width: 768px) {
+  .gb-checklist { grid-template-columns: repeat(2, 1fr); }
+}
+.gb-checklist__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--gb-line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--gb-ink);
+}
+.gb-checklist__item i {
+  flex: 0 0 auto;
+  color: var(--gb-orange);
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 @media (prefers-reduced-motion: reduce) {

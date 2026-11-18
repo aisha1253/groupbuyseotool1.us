@@ -29,6 +29,33 @@ const plans = [
     cta: "Buy Now",
     popular: false,
   },
+  {
+    name: "Student",
+    price: "10",
+    productId: 92,
+    desc: "A budget-friendly option for students and beginners learning SEO who need essential research, writing, and optimization tools.",
+    tools: ["Semrush", "Canva", "Grammarly", "WooRank", "Quillbot"],
+    cta: "Buy Now",
+    popular: false,
+  },
+  {
+    name: "Basic",
+    price: "12",
+    productId: 10,
+    desc: "An entry-level plan for new users who want reliable access to core SEO research, content, and optimization tools.",
+    tools: ["Semrush", "Moz Pro", "Grammarly", "Ubersuggest", "Quillbot"],
+    cta: "Buy Now",
+    popular: false,
+  },
+  {
+    name: "Standard",
+    price: "25",
+    productId: 6,
+    desc: "A balanced plan for freelancers and small teams that need a wider set of research, analysis, and content optimization tools.",
+    tools: ["Semrush", "Moz Pro", "Majestic", "Ubersuggest", "SpyFu"],
+    cta: "Buy Now",
+    popular: false,
+  },
 ];
 
 const PricingHome = () => {

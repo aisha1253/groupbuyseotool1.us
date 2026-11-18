@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
-import { SingleToolsData } from "@/data/products";
+import Link from "next/link";
+import { SingleToolsData, getProductPrice } from "@/data/products";
 
 /** 3 rows × 4 columns on desktop */
 const PREVIEW_COUNT = 12;
@@ -75,36 +76,50 @@ const SingleToolsHome = () => {
         </div>
 
         <div className="gb-tools-grid">
-          {visible.map((tool) => (
-            <article key={tool.productId} className="gb-tool-card">
-              <div className="gb-tool-card__brand">
-                <img
-                  src={tool.logo || tool.icon}
-                  alt={`${tool.name} logo`}
-                  className="gb-tool-card__logo"
-                  width={40}
-                  height={40}
-                  loading="lazy"
-                  onError={(e) => {
-                    e.currentTarget.src =
-                      "/assets/img/services/service-3-1.svg";
-                  }}
-                />
-                <div className="gb-tool-card__top">
-                  <span className="gb-tool-card__cat">{tool.category}</span>
-                  <h3>{tool.name}</h3>
+          {visible.map((tool) => {
+            const price = getProductPrice(tool.productId);
+            return (
+              <article key={tool.productId} className="gb-tool-card">
+                <div className="gb-tool-card__brand">
+                  <img
+                    src={tool.logo || tool.icon}
+                    alt={`${tool.name} logo`}
+                    className="gb-tool-card__logo"
+                    width={40}
+                    height={40}
+                    loading="lazy"
+                    onError={(e) => {
+                      e.currentTarget.src =
+                        "/assets/img/services/service-3-1.svg";
+                    }}
+                  />
+                  <div className="gb-tool-card__top">
+                    <span className="gb-tool-card__cat">{tool.category}</span>
+                    <h3>{tool.name}</h3>
+                    {price && (
+                      <span className="gb-tool-card__price">{price}</span>
+                    )}
+                  </div>
                 </div>
-              </div>
-              <a
-                href={tool.cartUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="gb-btn gb-btn-primary"
-              >
-                Buy Now
-              </a>
-            </article>
-          ))}
+                <div className="gb-tool-card__actions">
+                  <a
+                    href={tool.cartUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="gb-btn gb-btn-primary"
+                  >
+                    Buy Now
+                  </a>
+                  <Link
+                    href={`/tools/${tool.productId}`}
+                    className="gb-btn gb-btn-outline"
+                  >
+                    View Detail
+                  </Link>
+                </div>
+              </article>
+            );
+          })}
         </div>
 
         {filtered.length === 0 && (

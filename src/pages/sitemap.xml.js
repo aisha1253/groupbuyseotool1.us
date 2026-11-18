@@ -1,6 +1,6 @@
 import { ProductsData } from "@/data/products";
 
-const SITE_URL = "https://groupbuyseotool1.us";
+const SITE_URL = "https://groupbuyseotool.us";
 
 const STATIC_PAGES = [
   { path: "/", changefreq: "daily", priority: "1.0" },
